@@ -1,5 +1,6 @@
 // global color tokens
 $-clr-white: hsl(0 0% 100%);
+$-clr-gray-100: rgb(51, 51, 51, 0.5);
 $-clr-gray-200: rgb(51, 51, 51, 0.5);
 $-clr-gray-300: hsl(0 0% 70%);
 $-clr-gray-400: #9497a5;
@@ -11,6 +12,7 @@ $-clr-gray-900: #333333;
 $-clr-blue-100: rgb(74, 144, 226, 0.3);
 $-clr-blue-200: #e3f0ff;
 $-clr-blue-400: #4a90e2;
+$-clr-blue-400: #154e8f;
 $-clr-pink-200: #ffe2e5;
 $-clr-pink-400: #ff7988;
 $-clr-pink-700: #ed3a4e;
@@ -36,10 +38,12 @@ $light: (
     "100": $-clr-blue-100,
     "200": $-clr-blue-200,
     "400": $-clr-blue-400,
+    "700": $-clr-blue-700,
   ),
   "accent": (
     "200": $-clr-pink-200,
     "400": $-clr-pink-400,
+    "700": $-clr-pink-700,
   ),
   "brown": (
     "200": $-clr-brown-200,
@@ -48,44 +52,6 @@ $light: (
   "green": (
     "200": $-clr-green-200,
     "400": $-clr-green-400,
-  ),
-);
-
-$dark: (
-  "neutral": (
-    "1000": $-clr-white,
-    "900": $-clr-gray-100,
-    "800": $-clr-gray-200,
-    "700": $-clr-gray-300,
-    "600": $-clr-gray-400,
-    "500": $-clr-gray-500,
-    "400": $-clr-gray-600,
-    "300": $-clr-gray-700,
-    "200": $-clr-gray-800,
-    "100": $-clr-gray-900,
-    "000": $-clr-black,
-  ),
-  "accent": (
-    "900": $-clr-deeppink-900,
-    "800": $-clr-deeppink-800,
-    "700": $-clr-deeppink-700,
-    "600": $-clr-deeppink-600,
-    "500": $-clr-deeppink-500,
-    "400": $-clr-deeppink-400,
-    "300": $-clr-deeppink-300,
-    "200": $-clr-deeppink-200,
-    "100": $-clr-deeppink-100,
-  ),
-  "primary": (
-    "900": $-clr-skyblue-900,
-    "800": $-clr-skyblue-800,
-    "700": $-clr-skyblue-700,
-    "600": $-clr-skyblue-600,
-    "500": $-clr-skyblue-500,
-    "400": $-clr-skyblue-400,
-    "300": $-clr-skyblue-300,
-    "200": $-clr-skyblue-200,
-    "100": $-clr-skyblue-100,
   ),
 );
 
@@ -105,9 +71,11 @@ $color-neutral-1000: var(--neutral-1000);
 $color-primary-100: var(--primary-100);
 $color-primary-200: var(--primary-200);
 $color-primary-400: var(--primary-400);
+$color-primary-700: var(--primary-700);
 
 $color-accent-200: var(--accent-200);
 $color-accent-400: var(--accent-400);
+$color-accent-700: var(--accent-700);
 
 $color-brown-200: var(--brown-200);
 $color-brown-400: var(--brown-400);
