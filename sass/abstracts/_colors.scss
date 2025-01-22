@@ -11,6 +11,7 @@ $-clr-gray-800: hsl(0 0% 17.5%);
 $-clr-gray-900: #333333;
 $-clr-blue-100: rgb(74, 144, 226, 0.3);
 $-clr-blue-200: #e3f0ff;
+$-clr-blue-300: #cddff7;
 $-clr-blue-400: #4a90e2;
 $-clr-blue-700: #154e8f;
 $-clr-pink-200: #ffe2e5;
@@ -37,6 +38,7 @@ $light: (
   "primary": (
     "100": $-clr-blue-100,
     "200": $-clr-blue-200,
+    "300": $-clr-blue-300,
     "400": $-clr-blue-400,
     "700": $-clr-blue-700,
   ),
@@ -70,6 +72,7 @@ $color-neutral-1000: var(--neutral-1000);
 
 $color-primary-100: var(--primary-100);
 $color-primary-200: var(--primary-200);
+$color-primary-300: var(--primary-300);
 $color-primary-400: var(--primary-400);
 $color-primary-700: var(--primary-700);
 
