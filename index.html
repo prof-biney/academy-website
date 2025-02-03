@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/sass/main.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +43,8 @@
             <h3 class="heading-3 uppercase margin-block-end-5">Modern</h3>
             <h1 class="heading-1 fw-bold">Education Academy</h1>
 
-            <p class="margin-block-end-8">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals.</p>
+            <p class="margin-block-end-8">Education is the process of facilitating learning, or the acquisition of
+              knowledge, skills, values, morals.</p>
 
             <button class="button" data-type="primary">Courses</button>
           </div>
@@ -60,13 +63,34 @@
         <p>Educational methods includes teaching, training, <br> storytelling, discussion and directed research.</p>
 
         <div class="grid-auto-fit">
-          <div class="card bg-primary-300">
-            Math
+          <div class="card bg-primary-300" data-type="small">
+            <div class="round">
+              <img src="assets/math-shape.png" alt="">
+            </div>
+            <p>Math</p>
           </div>
-          <div class="card bg-brown-200"></div>
-          <div class="card bg-green-200"></div>
-          <div class="card bg-accent-200"></div>
+          <div class="card bg-brown-200" data-type="small">
+            <div class="round">
+              <img src="assets/physics-shape.png" alt="">
+            </div>
+            <p>Physics</p>
+          </div>
+          <div class="card bg-green-200" data-type="small">
+            <div class="round">
+              <img src="assets/chemistry-shape.png" alt="">
+            </div>
+            <p>Chemistry</p>
+          </div>
+          <div class="card bg-accent-200" data-type="small">
+            <div class="round">
+              <img src="assets/informatics-shape.png" alt="">
+            </div>
+            <p>Informatics</p>
+          </div>
         </div>
+
+        <button class="button" data-type="primary-1">Explore All</button>
+
       </div>
     </section>
   </main>
