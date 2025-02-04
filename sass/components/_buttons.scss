@@ -38,7 +38,7 @@
   &[data-type="primary-1"] {
     background-color: transparent;
     color: $color-primary-400;
-    border: 1px solid $color-primary-400;
+    border: 1px solid $color-primary-100;
 
     &:is(:hover, :focus) {
       background-color: $color-primary-400;
