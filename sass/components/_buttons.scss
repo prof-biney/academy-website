@@ -52,8 +52,6 @@
     color: $color-primary-400;
     border: 1px solid $color-primary-100;
     width: 100%;
-    // padding-inline: 44%;
-    //margin-inline: 2px;
 
     &:is(:hover, :focus) {
       background-color: $color-primary-400;
