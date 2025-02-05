@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.bg-custom {
+  &[data-type="categories"] {
+    background: linear-gradient(
+      to bottom,
+      $color-primary-150 380px,
+      $color-neutral-000 380px
+    );
+  }
+}
