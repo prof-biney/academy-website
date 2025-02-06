@@ -1,0 +1,79 @@
+@use "../abstracts/" as *;
+
+.cool-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 100px) 370px repeat(2, 100px);
+  grid-template-rows: repeat(3, 192px);
+  row-gap: 2rem;
+  justify-content: center;
+  text-align: left;
+
+  $parent: &;
+
+  &__card {
+    display: flex;
+    align-items: stretch;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $color-neutral-000;
+    grid-column: span 4;
+
+    &:nth-child(1) {
+      grid-column: 1 / span 4;
+
+      & #{$parent}__number {
+        background-color: $color-primary-200;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: 2 / span 4;
+
+      & #{$parent}__number {
+        background-color: $color-brown-200;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-column: 1 / span 4;
+
+      & #{$parent}__number {
+        background-color: $color-accent-200;
+      }
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__number {
+    padding: 56px;
+    font-size: $size-11 + $size-2;
+    font-weight: $font-weight-bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    padding: 40px 49px 32px 49px;
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-size: $size-6;
+    font-weight: $font-weight-bold;
+    line-height: 1.33;
+    color: $color-neutral-900;
+  }
+
+  &__description {
+    line-height: 2;
+  }
+}
