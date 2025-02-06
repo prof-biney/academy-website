@@ -11,6 +11,8 @@
   box-shadow: $card-shadow;
   border-radius: $card-border-radius;
 
+  $parent: &;
+
   &__heading {
     @include heading($card-heading-font-size, $card-heading-color-default);
   }
@@ -20,22 +22,57 @@
     height: 190px;
     font-size: $font-size-500;
 
-    img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      background: white;
-      transform: translate(-50%, -50%);
-    }
-
     .round {
       position: relative;
-      background: white;
+      background: $color-neutral-000;
       height: 5rem;
       width: 5rem;
       margin-inline: auto;
       border-radius: 50%;
       margin-bottom: 20px;
+    }
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: $color-neutral-000;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &[data-type="feature"] {
+    box-shadow: $box-shadow-1;
+    background-color: $color-neutral-000;
+
+    .round {
+      position: relative;
+      background: $color-primary-200;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: $color-neutral-000;
+      transform: translate(-50%, -50%);
+    }
+
+    #{$parent}__title {
+      font-size: $size-6;
+      font-weight: $font-weight-bold;
+      margin-block-end: $size-5;
+      line-height: 1.33;
+      color: $color-neutral-900;
+    }
+
+    #{$parent}__description {
+      line-height: 2;
+      color: $color-neutral-400;
     }
   }
 }
