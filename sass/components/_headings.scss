@@ -9,4 +9,5 @@
 }
 .heading-3 {
   @include heading($heading-3-font-size, $heading-3-color);
+  letter-spacing: $letter-spacing;
 }
