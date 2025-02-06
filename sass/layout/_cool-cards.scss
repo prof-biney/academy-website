@@ -53,9 +53,10 @@
   }
 
   &__number {
-    padding: 56px;
+    color: $color-neutral-900;
     font-size: $size-11 + $size-2;
     font-weight: $font-weight-bold;
+    padding: 56px;
 
     display: flex;
     align-items: center;
