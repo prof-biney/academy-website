@@ -1,5 +1,18 @@
 @use "../abstracts/" as *;
 
+.big-card {
+  display: flex;
+  justify-content: space-between;
+  gap: $card-flow-spacing;
+  padding: 77px 100px 63px 100px;
+  background-color: $color-primary-400;
+  font-family: $card-font-family;
+  color: $card-color-default;
+  line-height: $card-line-height;
+  box-shadow: $card-shadow;
+  border-radius: $card-border-radius;
+}
+
 .card {
   display: grid;
   gap: $card-flow-spacing;
@@ -74,6 +87,48 @@
     #{$parent}__description {
       line-height: 2;
       color: $color-neutral-400;
+    }
+  }
+
+  &[data-type="service"] {
+    box-shadow: $box-shadow-1;
+    width: 370px;
+
+    .round {
+      position: relative;
+      background: $color-neutral-000;
+      height: $size-15;
+      width: $size-15;
+      border-radius: 50%;
+      margin-bottom: 58px;
+    }
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: $color-neutral-000;
+      transform: translate(-50%, -50%);
+    }
+
+    #{$parent}__title {
+      font-size: 40px;
+      font-weight: $font-weight-bold;
+      margin-block-end: $size-5;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      color: $color-neutral-900;
+      margin-bottom: 16px;
+    }
+
+    #{$parent}__description {
+      line-height: 2;
+      color: $color-neutral-400;
+    }
+
+    #{$parent}__link {
+      line-height: 2;
+      color: $color-neutral-900;
     }
   }
 }

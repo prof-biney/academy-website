@@ -18,6 +18,7 @@
   &[data-type="accent"] {
     background-color: $button-accent-background;
     color: $button-accent-color;
+    padding: 1rem 2rem;
 
     &:is(:hover, :focus) {
       background-color: $button-accent-background-hover;
