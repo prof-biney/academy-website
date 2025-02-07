@@ -8,4 +8,12 @@
       $color-neutral-000 380px
     );
   }
+
+  &[data-type="feature"] {
+    background: linear-gradient(
+      to bottom,
+      $color-primary-150 500px,
+      $color-neutral-000 500px
+    );
+  }
 }
