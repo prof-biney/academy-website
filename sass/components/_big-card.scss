@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.big-card {
+  display: flex;
+  justify-content: space-between;
+  gap: $card-flow-spacing;
+  padding: 77px 100px 63px 100px;
+  background-color: $color-primary-400;
+  font-family: $card-font-family;
+  color: $card-color-default;
+  line-height: $card-line-height;
+  box-shadow: $card-shadow;
+  border-radius: $card-border-radius;
+}
