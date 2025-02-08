@@ -2,7 +2,6 @@
 
 .event-card {
   display: flex;
-  gap: 0px;
   background-color: $color-neutral-000;
   font-family: $card-font-family;
   color: $color-neutral-400;
@@ -10,6 +9,8 @@
   box-shadow: $card-shadow;
   border-radius: $card-border-radius;
   width: 970px;
+
+  margin-bottom: 2rem;
 
   &__img {
     position: relative;
