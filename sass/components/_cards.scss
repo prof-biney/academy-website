@@ -118,4 +118,58 @@
       color: $color-neutral-900;
     }
   }
+
+  &[data-type="team"] {
+    box-shadow: $box-shadow-1;
+    background-color: $color-neutral-000;
+    width: 270px;
+
+    .round {
+      position: relative;
+      // background: $color-neutral-400;
+      height: 206px;
+      width: 206px;
+      border-radius: 50%;
+      margin-bottom: 26px;
+    }
+
+    .image {
+      position: absolute;
+      left: 50%;
+      left: 24px;
+      top: 50%;
+      top: 20px;
+    }
+
+    .small-round {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+
+      background-color: $color-neutral-000;
+      width: 48px;
+      height: 48px;
+      box-shadow: $box-shadow-1;
+      border-radius: 50%;
+    }
+
+    .facebook {
+      position: absolute;
+      top: 16px;
+      left: 19px;
+    }
+
+    .name {
+      color: $color-neutral-900;
+      font-size: $font-size-600;
+      font-weight: $font-weight-bold;
+      line-height: 32px;
+      margin-bottom: 3px;
+    }
+
+    .subject {
+      color: $color-neutral-400;
+      line-height: 2;
+    }
+  }
 }
