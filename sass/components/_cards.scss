@@ -133,12 +133,28 @@
       margin-bottom: 26px;
     }
 
-    .image {
+    .image[data-type="1"] {
       position: absolute;
-      left: 50%;
-      left: 24px;
-      top: 50%;
       top: 20px;
+      left: 24px;
+    }
+
+    .image[data-type="2"] {
+      position: absolute;
+      top: 19px;
+      left: 21px;
+    }
+
+    .image[data-type="3"] {
+      position: absolute;
+      top: 20px;
+      left: 29px;
+    }
+
+    .image[data-type="4"] {
+      position: absolute;
+      top: 21px;
+      left: 28px;
     }
 
     .small-round {
