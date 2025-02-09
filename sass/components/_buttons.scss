@@ -48,6 +48,18 @@
     }
   }
 
+  &[data-type="primary-round"] {
+    background-color: transparent;
+    color: $color-primary-400;
+    border: 1px solid $color-primary-100;
+    margin: 0;
+
+    &:is(:hover, :focus) {
+      background-color: $color-primary-400;
+      color: $button-primary-color-hover;
+    }
+  }
+
   &[data-type="primary-1-bleed"] {
     background-color: transparent;
     color: $color-primary-400;
